@@ -133,3 +133,76 @@ var x = 1;
     console.log(index + " x " + z + " = " + index*z);
     
  }
+
+//// Check if a given year is a leap year using if-else statements.
+
+var years = prompt("Please enter years");
+
+if (years % 4 ===0 || years % 100 === 0 || years % 400 === 0) {
+    console.log("This year is leap year");
+} else {
+    console.log("This year is not leap year");
+}
+  
+///// Convert a given temperature from Celsius to Fahrenheit using math operators
+
+var temp =+ prompt("Please enter temperature");
+ var fahrenheit = (temp * 9/5 ) + 32;
+ console.log("Fahrenheit is => ", fahrenheit);
+
+ //// Determine the largest number among three given numbers using if-else-if statements.
+
+ var num1 = 56;
+ var num2 = 76;
+ var num3 = 34;
+
+ if (num1 > num2 && num1 < num3) {
+    console.log("Number 1 is greater than other two");
+ }
+ else if ( num2 > num1 && num2 > num3) {
+    console.log("Number 2 is greater than other two");
+    
+ }
+ else if( num3 > num1 && num3 > num2){
+    console.log("Number 3 is greater than other two");
+
+ }
+
+ //// Calculate the sum of all even numbers from 1 to 100
+
+ var sum = 0;
+
+for (let index = 2; index <= 100; index+=2) {
+    console.log("Sum of even number less than 100 is ", sum += index);
+};
+
+//// Calculate the sum of all odd numbers from 1 to 100
+
+var odd = 0;
+for (let index = 1; index <= 100; index+=2) {
+    console.log("Sum of odd number less than 100 is ", odd += index);
+};
+
+//// find factorial of a number by using the while loop.
+
+var factorial = 6;
+var result = factorial;
+while (factorial >= 1) {
+   
+    console.log("Factorial of 6 ",result );
+     factorial--;
+    result*=factorial;
+  
+};
+
+////Check if a given string is a palindrome using if-else statements.
+
+var palindrome = prompt("enter any things");
+
+var result1 = palindrome.split("").reverse().join("");
+
+if (result1 === palindrome) {
+    alert("Word are palindrome");
+} else {
+    alert("Word are not palindrome");
+}
