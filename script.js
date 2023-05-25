@@ -206,3 +206,92 @@ if (result1 === palindrome) {
 } else {
     alert("Word are not palindrome");
 }
+
+//// find the prime number b/w 1-100..
+
+function checkPrimeNumber() {
+    var inputPrime = document.getElementById("result").value;
+
+    var isPrime;
+
+    for (let i = 2; i < inputPrime; i++) {
+        isPrime = 1
+        for (let j = 2; j < i/2 ; j++) {
+            if(i % j === 0){
+                isPrime = 0;
+                break;
+            }
+            
+        }
+        
+        if(isPrime=== 1){
+            document.write(i + "<br>");
+        }
+    }
+}
+
+/// Create a program that prints the following pattern using nested for loops:
+
+var row = 8;
+
+for (let index = 1; index <= row; index++) {
+    var pattern = " ";
+    for (let j = 1; j < index ; j++) {
+        pattern += " * ";
+        
+    }
+    console.log(pattern);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function checkPrimeNumber() {
+//     var number = document.getElementById("result").value;
+//     var prime;
+// for (let index = 2; index < number; index++) {
+//      prime = 1;
+//     for (let j = 2; j < index/2; j++) {
+//         if (index % j === 0) {
+//             prime = 0;
+//             break;
+//         }
+        
+//     }
+//     if (prime === 1) {
+//         document.write(index + "</br>");
+//     }
+    
+// }
+
+
+// }
