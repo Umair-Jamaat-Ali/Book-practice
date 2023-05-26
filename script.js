@@ -231,16 +231,61 @@ function checkPrimeNumber() {
 }
 
 /// Create a program that prints the following pattern using nested for loops:
+var rows = 9;
+for (let index = 0; index < rows; index++) {
+     pattern = " ";
 
-var row = 8;
-
-for (let index = 1; index <= row; index++) {
-    var pattern = " ";
-    for (let j = 1; j < index ; j++) {
+     for (let j = 0; j < index; j++) {
         pattern += " * ";
         
-    }
+     }
     console.log(pattern);
+};
+
+/// Create a program that prints 1 to 10 table using nested for loops:
+
+var tableSize = 10;
+
+for (let index = 1; index <= tableSize; index++) {
+    
+    var row = " ";
+    for (let j = 1; j <= tableSize; j++) {
+        var product = index * j;   
+        row += product + `\t` ;    
+    }
+    console.log(row);
+}
+
+
+
+//// Write a program that finds the sum of all odd numbers from 1 to 100 using a for loop.
+
+var oddSum = 0;
+
+for (let index = 1; index <= 100; index+=2) {
+    console.log("Sum of odd number is ",oddSum += index);
+};
+
+
+//// write a program that write the 1 - 100 number while using for loop;
+
+var numberSize = 100;
+
+for (let index = 0; index <= numberSize; index++) {
+    var rowss = " ";
+ rowss += index ;
+
+ console.log(rowss);
+}
+
+
+//// sum all number from 1-50.
+
+var sumNumber = 0;
+
+for (let index = 0; index <= 50; index++) {
+console.log(sumNumber += index);;
+    
 }
 
 
@@ -265,33 +310,3 @@ for (let index = 1; index <= row; index++) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-// function checkPrimeNumber() {
-//     var number = document.getElementById("result").value;
-//     var prime;
-// for (let index = 2; index < number; index++) {
-//      prime = 1;
-//     for (let j = 2; j < index/2; j++) {
-//         if (index % j === 0) {
-//             prime = 0;
-//             break;
-//         }
-        
-//     }
-//     if (prime === 1) {
-//         document.write(index + "</br>");
-//     }
-    
-// }
-
-
-// }
